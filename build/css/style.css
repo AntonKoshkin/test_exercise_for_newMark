@@ -1348,6 +1348,7 @@ li a
 .menu
 {
     margin-top: 50px;
+    padding: 5px;
 
     text-align: right;
 
@@ -1485,6 +1486,10 @@ li a
     li span
     {
         border: none;
+    }
+    .menu
+    {
+        padding: 0;
     }
     .menu__btn
     {
