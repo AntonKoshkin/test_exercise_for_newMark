@@ -1,0 +1,16 @@
+//- это нужно если свг-спрайт используется с symbol&use
+include common/svg-sprite-mixin
+
+<!DOCTYPE html>
+html(lang='ru')
+	head
+		include common/head
+		block title
+	body
+		//- в этот див будет вставлен свг спрайт если используется инлайново
+		//- div(style='height: 0; width: 0; position: absolute; visibility: hidden')
+		//- 	<!-- inject:svg --><!-- endinject -->
+
+		block content
+
+		script(src='js/main.js' async defer)

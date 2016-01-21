@@ -1,0 +1,80 @@
+$qwe1-name = 'qwe1'
+$qwe1-x = -0%
+$qwe1-y = -0%
+$qwe1-width = 46px
+$qwe1-height = 40px
+$qwe1-image = url(../img/svg-sprite-9d313c1c.svg)
+$qwe1 = 'qwe1' 0% 0% 46px 40px url(../img/svg-sprite-9d313c1c.svg)
+$qwe2-name = 'qwe2'
+$qwe2-x = -66.66666666666667%
+$qwe2-y = -0%
+$qwe2-width = 42px
+$qwe2-height = 40px
+$qwe2-image = url(../img/svg-sprite-9d313c1c.svg)
+$qwe2 = 'qwe2' 66.66666666666667% 0% 42px 40px url(../img/svg-sprite-9d313c1c.svg)
+$qwe3-name = 'qwe3'
+$qwe3-x = -0%
+$qwe3-y = -100%
+$qwe3-width = 42px
+$qwe3-height = 40px
+$qwe3-image = url(../img/svg-sprite-9d313c1c.svg)
+$qwe3 = 'qwe3' 0% 100% 42px 40px url(../img/svg-sprite-9d313c1c.svg)
+$qwe4-name = 'qwe4'
+$qwe4-x = -52.5%
+$qwe4-y = -100%
+$qwe4-width = 31px
+$qwe4-height = 40px
+$qwe4-image = url(../img/svg-sprite-9d313c1c.svg)
+$qwe4 = 'qwe4' 52.5% 100% 31px 40px url(../img/svg-sprite-9d313c1c.svg)
+$qwe5-name = 'qwe5'
+$qwe5-x = -89.79591836734694%
+$qwe5-y = -60.65573770491803%
+$qwe5-width = 13px
+$qwe5-height = 19px
+$qwe5-image = url(../img/svg-sprite-9d313c1c.svg)
+$qwe5 = 'qwe5' 89.79591836734694% 60.65573770491803% 13px 19px url(../img/svg-sprite-9d313c1c.svg)
+$qwe6-name = 'qwe6'
+$qwe6-x = -89.79591836734694%
+$qwe6-y = -91.80327868852459%
+$qwe6-width = 13px
+$qwe6-height = 19px
+$qwe6-image = url(../img/svg-sprite-9d313c1c.svg)
+$qwe6 = 'qwe6' 89.79591836734694% 91.80327868852459% 13px 19px url(../img/svg-sprite-9d313c1c.svg)
+$qwe7-name = 'qwe7'
+$qwe7-x = -97.11538461538461%
+$qwe7-y = -53.6231884057971%
+$qwe7-width = 7px
+$qwe7-height = 11px
+$qwe7-image = url(../img/svg-sprite-9d313c1c.svg)
+$qwe7 = 'qwe7' 97.11538461538461% 53.6231884057971% 7px 11px url(../img/svg-sprite-9d313c1c.svg)
+$qwe8-name = 'qwe8'
+$qwe8-x = -100%
+$qwe8-y = -0%
+$qwe8-width = 23px
+$qwe8-height = 17px
+$qwe8-image = url(../img/svg-sprite-9d313c1c.svg)
+$qwe8 = 'qwe8' 100% 0% 23px 17px url(../img/svg-sprite-9d313c1c.svg)
+$qwe9-name = 'qwe9'
+$qwe9-x = -96.7032967032967%
+$qwe9-y = -28.333333333333332%
+$qwe9-width = 20px
+$qwe9-height = 20px
+$qwe9-image = url(../img/svg-sprite-9d313c1c.svg)
+$qwe9 = 'qwe9' 96.7032967032967% 28.333333333333332% 20px 20px url(../img/svg-sprite-9d313c1c.svg)
+
+svg-sprite($sprite)
+	width $sprite[3]
+	height $sprite[4]
+	background-position $sprite[1] $sprite[2]
+	background-image $sprite[5]
+	
+// элемент спрайта вставляется так:
+// svg-sprite($pic-name)
+// 
+// скомпилится в следующее
+// .pic-name {
+// 	width: {pic-width};
+// 	height: {pic-height};
+// 	background-position: pic-x pic-y;
+// 	background-image: url(pic-url);
+// }

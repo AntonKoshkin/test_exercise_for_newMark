@@ -1,0 +1,33 @@
+//- использовать при вставке инлайново
+mixin svg-in(name,style)
+	-style = style || ''
+	if style != ''
+		svg(class='svg_' + name + ' ' + style)
+			use(xlink:href='#svg_' + name)
+	else
+		svg(class='svg_' + name)
+			use(xlink:href='#svg_' + name)
+
+//- использовать при вставке внешним файлом
+mixin svg-ex(name, style)
+	-style = style || ''
+	if style != ''
+		svg(role='img' title='svg_'+name class='svg_' + name + ' ' + style)
+			use(xlink:href='img/svg.svg#svg_'+name)
+	else
+		svg(role='img' title='svg_'+name class='svg_' + name)
+			use(xlink:href='img/svg.svg#svg_'+name)
+
+//- использование:
+//- 
+//- это
+//- +svg-in('check_round','red_mod')
+//- +svg-ex('burger')
+//- 
+//- скомпилится в это
+//- <svg class="svg_check_round red_mod">
+//- 	<use xlink:href="#svg_check_round"></use>
+//- </svg>
+//- <svg class="svg_burger">
+//- 	<use xlink:href="img.svg.svg#svg_burger"></use>
+//- </svg>
