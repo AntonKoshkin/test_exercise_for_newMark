@@ -1302,6 +1302,14 @@ blockquote
 {
     box-sizing: border-box;
 }
+a
+{
+    color: #000;
+}
+a:hover
+{
+    color: #f00;
+}
 .menu__btn,
 .menu__strip,
 .menu__second-list:after,
@@ -1322,7 +1330,8 @@ blockquote
 .menu__third-item,
 .menu__fourth-list,
 .menu__fourth-item,
-li span
+li span,
+li a
 {
     display: block;
 }
@@ -1379,6 +1388,9 @@ li span
     height: 0;
 
     text-align: center;
+
+    border-right: 1px solid #000;
+    border-left: 1px solid #000;
 }
 .menu__list.open
 {
@@ -1447,14 +1459,16 @@ li span
     font-size: 14px;
     font-weight: normal;
 }
-li span
+li span,
+li a
 {
     padding: 5px;
 
     cursor: pointer;
 
-    border: 1px solid #000;
+    border-top: 1px solid #000;
     border-top: none;
+    border-bottom: 1px solid #000;
 }
 @media (min-width: 980px)
 {
@@ -1484,6 +1498,8 @@ li span
         overflow: auto;
 
         height: auto;
+
+        border: none;
     }
     .menu__item
     {
@@ -1622,9 +1638,11 @@ li span
     {
         height: auto;
     }
-    .menu__fourth-item > span
+    .menu__fourth-item > a
     {
         padding: 3px 0;
+
+        border: none;
     }
     .menu__item:nth-child(5) .menu__second-item:after,
     .menu__item:nth-child(6) .menu__second-item:after,

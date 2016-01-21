@@ -1,6 +1,12 @@
 *
 	box-sizing border-box
 
+a
+	color #000
+	
+	&:hover
+		color red
+
 $dib
 	display inline-block
 
@@ -46,6 +52,8 @@ $pr
 		left 0
 		width 100%
 		height 0
+		border-left 1px solid #000
+		border-right 1px solid #000
 		
 		@extend $db
 		
@@ -121,13 +129,16 @@ $pr
 			
 			@extend $db
 
-li span
-	padding 5px
-	border 1px solid #000
-	border-top none
-	cursor pointer
+li
+	span
+	a
+		padding 5px
+		border-top 1px solid #000
+		border-bottom 1px solid #000
+		border-top none
+		cursor pointer
 
-	@extend $db
+		@extend $db
 
 @media (min-width 980px)
 
@@ -146,6 +157,7 @@ li span
 			position relative
 			height auto
 			overflow auto
+			border none
 		
 		&__item
 			display table-cell
@@ -263,8 +275,9 @@ li span
 				@extend $dib
 			
 			&-item
-				> span
+				> a
 					padding 3px 0
+					border none
 		
 		&__item:nth-child(5)
 		&__item:nth-child(6)
